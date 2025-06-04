@@ -1,0 +1,10 @@
+^E:\SKILLBOX\SIPLUSPLUS\MODULE5_PRACTICE\BUILD\CMAKEFILES\DAF849C8342C2ECD129A1754B02C4FFE\GENERATE.STAMP.RULE
+setlocal
+"C:\Program Files\CMake\bin\cmake.exe" -SE:/SKILLBOX/siplusplus/module5_practice -BE:/SKILLBOX/siplusplus/module5_practice/build --check-stamp-list CMakeFiles/generate.stamp.list --vs-solution-file E:/SKILLBOX/siplusplus/module5_practice/build/practice5_1.sln
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal & call :cmErrorLevel %errorlevel% & goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd
