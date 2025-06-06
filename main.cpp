@@ -21,7 +21,7 @@ public:
     brand_name = "Volga";
     cylinders = 4;
     power = 90;
-    cnt();
+    count();
   }
 
   // Конструктор с параметрами
@@ -30,7 +30,7 @@ public:
     brand_name = brand;
     cylinders = cyl_num;
     power = h_power;
-    cnt();
+    count();
   }
 
   // Конструктор копирования
@@ -39,7 +39,7 @@ public:
     brand_name = p.brand_name;
     cylinders = p.cylinders;
     power = p.power;
-    cnt();
+    count();
   }
 
   // Определим деструктор класса
@@ -78,7 +78,7 @@ public:
     return *this;
   }
 
-  friend int cnt(); 
+  friend int count(); 
   
   void print()
   {
@@ -108,7 +108,7 @@ std::istream &operator>>(std::istream &in, Car &property)
   return in;
 }
 //функция-счетчике вызовов классов 
-int cnt() 
+int count() 
   {
     //переменная,хранящая число выводов класса
     static int n_obj = 0;
