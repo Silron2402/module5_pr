@@ -5,7 +5,6 @@ using namespace std;
 class Car
 {
 private:
-  //static int n_obj;
   // объявляем закрытые переменные класса
   // Торговая марка
   string brand_name;
@@ -146,8 +145,7 @@ public:
 
   void print()
   {
-    // std::cout << "Brand:  " << getBrand_name() << "\tCylinders: " << getCylinders() <<
-    //"\tPower: " << getPower() << "\tCapacity: " << getCapacity() << std::endl;
+    //вывод в терминал
     std::cout << "Brand:  " << getBrand_name() << std::endl;
     std::cout << "Cylinders: " << getCylinders() << std::endl;
     std::cout << "Power: " << getPower() << std::endl;
