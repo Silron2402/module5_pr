@@ -5,6 +5,8 @@ using namespace std;
 class Car
 {
 private:
+  //Объявляем прототип дружественной функции
+  friend int count(); 
   // объявляем закрытые переменные класса
   // Торговая марка
   string brand_name;
@@ -16,6 +18,7 @@ private:
 public:
   // конструктор по умолчанию
   
+
   Car()
   {
     brand_name = "Volga";
@@ -77,9 +80,8 @@ public:
     }
     return *this;
   }
-
-  friend int count(); 
   
+  //Функция вывода содержимого класса
   void print()
   {
     std::cout << "Brand:  " << getBrand_name() << std::endl;
@@ -138,7 +140,7 @@ public:
   }
 
   // Метод сеттер
-  void Lorry::setCapacity(int cap) { capacity = cap; }
+  void setCapacity(int cap) { capacity = cap; }
 
   // Метод - геттер
   int getCapacity() const { return capacity; }
