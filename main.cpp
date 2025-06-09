@@ -1,12 +1,13 @@
 #include <iostream>
 using namespace std;
 
+//Объявление прототипа функции-счетчика 
+int count();
+ 
 // Объявление класса Car
 class Car
 {
 private:
-  //Объявляем прототип дружественной функции
-  friend int count(); 
   // объявляем закрытые переменные класса
   // Торговая марка
   string brand_name;
@@ -80,6 +81,9 @@ public:
     }
     return *this;
   }
+
+  //Объявляем прототип дружественной функции
+  friend int count(); 
   
   //Функция вывода содержимого класса
   void print()
